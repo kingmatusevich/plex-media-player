@@ -2,9 +2,9 @@ os: osx
 language: objective_c
 before_install:
  - brew update
- - brew outdated ninja || brew upgrade ninja
- - brew outdated mpv || brew upgrade mpv --with-shared --HEAD
- - brew outdated cmake || brew upgrade cmake
+ - brew outdated ninja || brew install ninja
+ - brew outdated mpv || brew install mpv --with-shared --HEAD
+ - brew outdated cmake || brew install cmake
  - mkdir build ; cd build
  - cmake -Gninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
 install:
