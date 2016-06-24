@@ -10,3 +10,11 @@ before_install:
 install:
  - ninja
  - ninja install
+ - tar -zcvf PMP.tar.gz "output/Plex Media Player.app"
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+ file: "$TRAVIS_BUILD_DIR/build/output/PMP.tar.gz"
+  skip_cleanup: true
+  on:
+    tags: true
