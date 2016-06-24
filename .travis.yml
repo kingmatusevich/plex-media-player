@@ -3,6 +3,7 @@ language: objective_c
 before_install:
  - brew update
  - brew install python3 
+ - brew postinstall python3
  - python3 -c 'import setuptools'
  - brew install ninja
  - brew install mpv --with-shared --HEAD
