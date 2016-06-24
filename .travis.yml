@@ -20,7 +20,7 @@ deploy:
   provider: releases
   api_key:
     secure: "I3GPebtv4b9MeCu7PQxqXyVs5Cy8hbbofSR2mgG5Jak128oCPT3IfEyreF+rI3mboGSxFhcPIyclLpnAO1beJIab9e4arudykhPKslqL5kXcG+xVB7lymzt4IQ5OZiY8r4A51fP3NmHWgE4IThyMZFkpSfujenmSQwtvE4vO1cROichrGjcLveXKYkwMdeXtD+YqCJqEC3+Kov9c7UxbN4l+r9ekQxaLGAD/US8dtdVObwpuSI0c92axualPYEcfOITEJYL94T3IxkT8Om/Yp6hGXeWtXgjopLWTr90jsvUKLeSgn4C8ZZHn8vOhAPTryDWsFlXWpM8xNr2sz6bEKLqoEWUtelR7qVLGglKerleAmTWMqCg8+MuLCXOSyaC5cP6c9zzs20E+xvOShlE/gxkBNG2ViUkp5pC3T8r6XPJwMqz+oQZX9d8CQw6jK6B7mAqKfx6A7U0bA+QC+2Ke8Qn9Le6GNVaRfwMDYeB/luIOFx61vSPRihIUkuMrOw3nex88CaA7XylXL61VJQM0ILGYk6xsAKNdT3EHVbecVTW/HQRnjZ6+s0FsaL+Kw4WUtok3VZmSkOxZG/4Jgre+EaxFFpEHevthtyxqTbrka/uKApetxqDJ7aZc2Us8SoYuR59I9z+qvBAXLThTmrlguseAUC+eBxCr+PAmjHcP1SE="
-  file: build/output/pmp.tar.gz
+  file: "$TRAVIS_BUILD_DIR/build/output/PMP.tar.gz"
   skip_cleanup: true
   on:
     tags: true
