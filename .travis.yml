@@ -23,6 +23,6 @@ deploy:
   file: build/output/pmp.tar.gz
   skip_cleanup: true
   on:
-    repo: kingmatusevich/plex-media-player
+    tags: true
 
 
