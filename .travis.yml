@@ -2,6 +2,7 @@ os: osx
 language: objective_c
 before_install:
  - brew update
+ - brew outdated cmake || brew upgrade cmake
  - brew outdated mpv || brew upgrade mpv --with-shared --HEAD
  - brew outdated ninja || brew upgrade ninja
  - mkdir build ; cd build
