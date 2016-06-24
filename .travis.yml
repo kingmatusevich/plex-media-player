@@ -6,7 +6,7 @@ before_install:
  - brew outdated mpv || brew upgrade mpv --with-shared --HEAD
  - brew outdated cmake || brew upgrade cmake
  - mkdir build ; cd build
- - cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
+ - cmake -Gninja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=output ..
 install:
  - ninja
  - ninja install
