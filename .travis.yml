@@ -5,7 +5,7 @@ before_install:
  - brew install python3 
  - brew postinstall python3
  - brew install python
- - brew postinstall python2
+ - brew postinstall python
  - python3 -c 'import setuptools'
  - brew install ninja
  - brew install mpv --with-shared --HEAD
