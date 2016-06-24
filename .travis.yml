@@ -18,8 +18,10 @@ install:
  - tar -zcvf PMP.tar.gz "output/Plex Media Player.app"
 deploy:
   provider: releases
-  api_key: "1c9cfc7f0a2a02a4ca7eb2c7f7902db5c9941b49"
-  file: "$TRAVIS_BUILD_DIR/build/output/PMP.tar.gz"
-  skip_cleanup: true
-  On:
-    tags: true
+  api_key:
+    secure: ds6Q/BHYiOLMS0ijGrVnOHIb5kyDX1MdexVIpeJokNUXNCvVeJcmJtd1tcgN0izwdP6NJw7ZPwAoCuqkv$
+  file: build/output/pmp.tar.gz
+  on:
+    repo: kingmatusevich/plex-media-player
+
+
