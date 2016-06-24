@@ -21,6 +21,7 @@ deploy:
   api_key:
     secure: ds6Q/BHYiOLMS0ijGrVnOHIb5kyDX1MdexVIpeJokNUXNCvVeJcmJtd1tcgN0izwdP6NJw7ZPwAoCuqkv$
   file: build/output/pmp.tar.gz
+  skip_cleanup: true
   on:
     repo: kingmatusevich/plex-media-player
 
